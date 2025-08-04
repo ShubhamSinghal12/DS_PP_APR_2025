@@ -10,12 +10,16 @@ url = "https://in.search.yahoo.com/"
 
 driver.get(url)
 
-element = driver.find_element(By.NAME, "p")
-element.send_keys("Hello World")
+time.sleep(10)
+driver.quit()
 
-time.sleep(3)
 
-element.send_keys(Keys.RETURN)
+# element = driver.find_element(By.NAME, "p")
+# element.send_keys("Hello World")
+
+# time.sleep(3)
+
+# element.send_keys(Keys.RETURN)
 # element = driver.find_element(By.ID,'cols')
 # print(element.get_attribute('outerHTML'))
 
@@ -25,15 +29,13 @@ element.send_keys(Keys.RETURN)
 #     print(ele.text,ele.get_attribute('href'))
 
 
-time.sleep(5)
+# time.sleep(5)
 
-element = driver.find_element(By.ID,'logo')
-element.click()
-time.sleep(3)
+# element = driver.find_element(By.ID,'logo')
+# element.click()
+# time.sleep(3)
 
 # driver.back()
 # time.sleep(3)
 
 # driver.forward()
-
-driver.quit()
