@@ -17,7 +17,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 
 #Init Camera
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 
 # Face Detection
 face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_alt.xml")

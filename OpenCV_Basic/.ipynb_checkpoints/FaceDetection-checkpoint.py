@@ -1,6 +1,6 @@
 import cv2
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_alt.xml")
 
 while True:
@@ -14,6 +14,7 @@ while True:
     # cv2.imshow('Gray Image',gray_img)
 
     faces = face_cascade.detectMultiScale(frame,1.3,5)
+    print(faces)
     for (x,y,w,h) in faces:
         cv2.rectangle(frame,(x,y),(x+w,y+h),[255,0,0],2)
 
